@@ -31,7 +31,7 @@ public class FirstClass {
 
             driver.manage().window().maximize();//maximize the page.
 
-            driver.get("https://www.amazon.com.tr/");//opens trendyol website.
+            driver.get("https://www.amazon.com.tr/");//opens amazon website.
 
             // checks if the driver is in home page.
             String homeUrl = driver.getCurrentUrl();
@@ -41,7 +41,7 @@ public class FirstClass {
                 System.out.println("failed");
             }
 
-            driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]")).click();//opens sign in page.
+            driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]")).click();//opens login page.
 
             //checks if the driver is in login page.
             String loginUrl = driver.getCurrentUrl();
